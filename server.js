@@ -38,6 +38,7 @@ app.use(function (req, res, next) {
 //end of middlewar::::::::::::::::::::::::::::::::
 
 require("./app/routes/student.routes.js")(app);
+require("./app/routes/teacher.routes.js")(app);
 // set port, listen for requests
 app.listen(5000, () => {
   console.log("Server is running on port 5000.");
